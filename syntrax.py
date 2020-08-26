@@ -1,4 +1,4 @@
-#!/usr/bin/python
+pip install pango#!/usr/bin/python
 
 
 
