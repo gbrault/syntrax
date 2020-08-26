@@ -1,7 +1,3 @@
-pip install pango#!/usr/bin/python
-
-
-
 import re
 import argparse
 from configparser import ConfigParser
@@ -11,6 +7,7 @@ import os
 import io
 import copy
 import subprocess
+from collections.abc import Sequence
 import collections
 
 import cairo
@@ -1888,7 +1885,7 @@ def choice(*args):
   return ['or'] + list(args)
 
 def is_listy(v):
-  return isinstance(v, collections.Sequence) and not isinstance(v, str)
+  return isinstance(v, Sequence) and not isinstance(v, str)
 
 def opt(*args):
   largs = list(args)
